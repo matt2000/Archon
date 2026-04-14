@@ -121,7 +121,6 @@ async function refresh() {
 ```
 
 **Change to:**
-
 ```typescript
 async function refresh() {
   // Fixed code with queue
