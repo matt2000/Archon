@@ -100,7 +100,7 @@ The artifact must contain **everything the next agent needs**:
 **Bad artifact**: "Fix the authentication bug in the login handler"
 
 **Good artifact**:
-```markdown
+````markdown
 ## Problem
 Users get 401 errors when token refresh races with API calls.
 
@@ -121,6 +121,7 @@ async function refresh() {
 ```
 
 **Change to:**
+
 ```typescript
 async function refresh() {
   // Fixed code with queue
@@ -144,7 +145,7 @@ describe('refresh', () => {
 bun run type-check
 bun test src/auth/
 ```
-```
+````
 
 ---
 
